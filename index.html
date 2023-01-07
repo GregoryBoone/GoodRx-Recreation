@@ -11,6 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/styles.css">
   </head>
   <body>
@@ -98,98 +100,136 @@
 
 
     <div class="">
-    <div class="carousel-wrapper slideshow-container">
-      <div class="med-box">
-        <h3>Atorvastatin</h3>
-        <p class="fade-text">40mg, 30 tablets</p>
-        <hr>
-        <p class="full-price">$127.72</p>
-        <p class="current-price">$8.65</p>
-        <p class="percent-off">93% off with EasyRx</p>
-        <button type="button" class="btn btn-outline-primary">Get Free Coupon</button>
-      </div>
 
-      <div class="med-box">
-        <h3>Sildenafil</h3>
-        <p class="fade-text">20 mg, 30 tablets</p>
-        <hr>
-        <p class="full-price">$378.30</p>
-        <p class="current-price">$13.50</p>
-        <p class="percent-off">96% off with EasyRx</p>
-        <button type="button" class="btn btn-outline-primary">Get Free Coupon</button>
-      </div>
+      <div id="medbox-slider" class="carousel slide" data-bs-ride="carousel">
 
-      <div class="med-box">
-        <h3>Amlodipine</h3>
-        <p class="fade-text">10mg, 30 tablets </p>
-        <hr>
-        <p class="full-price">$47.99</p>
-        <p class="current-price">$4.50</p>
-        <p class="percent-off">91% off with EasyRx</p>
-        <button type="button" class="btn btn-outline-primary">Get Free Coupon</button>
-      </div>
+    <div class="carousel-inner">
 
-      <div class="med-box ">
-        <h3>Lorem Ipsum</h3>
-        <p class="fade-text">10mg, 30 tablets</p>
-        <hr>
-        <p class="full-price">$61.60</p>
-        <p class="current-price">$21.70</p>
-        <p class="percent-off">65% off with EasyRx</p>
-        <button type="button" class="btn btn-outline-primary">Get Free Coupon</button>
-      </div>
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="med-box">
+              <h3>Atorvastatin</h3>
+              <p class="fade-text">40mg, 30 tablets</p>
+              <hr>
+              <p class="full-price">$127.72</p>
+              <p class="current-price">$8.65</p>
+              <p class="percent-off">93% off with EasyRx</p>
+              <button type="button" class="btn btn-outline-primary">Get Free Coupon</button>
+            </div>
 
-      <div class="med-box ">
-        <h3>Lorem Ipsum</h3>
-        <p class="fade-text">10mg, 30 tablets</p>
-        <hr>
-        <p class="full-price">$61.60</p>
-        <p class="current-price">$21.70</p>
-        <p class="percent-off">65% off with EasyRx</p>
-        <button type="button" class="btn btn-outline-primary">Get Free Coupon</button>
-      </div>
+          </div>
+          <div class="col-md-4">
+            <div class="med-box">
+              <h3>Sildenafil</h3>
+              <p class="fade-text">20 mg, 30 tablets</p>
+              <hr>
+              <p class="full-price">$378.30</p>
+              <p class="current-price">$13.50</p>
+              <p class="percent-off">96% off with EasyRx</p>
+              <button type="button" class="btn btn-outline-primary">Get Free Coupon</button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="med-box">
+              <h3>Amlodipine</h3>
+              <p class="fade-text">10mg, 30 tablets </p>
+              <hr>
+              <p class="full-price">$47.99</p>
+              <p class="current-price">$4.50</p>
+              <p class="percent-off">91% off with EasyRx</p>
+              <button type="button" class="btn btn-outline-primary">Get Free Coupon</button>
+            </div>
+          </div>
+        </div>
 
-      <div class="med-box ">
-        <h3>Lorem Ipsum</h3>
-        <p class="fade-text">10mg, 30 tablets</p>
-        <hr>
-        <p class="full-price">$61.60</p>
-        <p class="current-price">$21.70</p>
-        <p class="percent-off">65% off with EasyRx</p>
-        <button type="button" class="btn btn-outline-primary">Get Free Coupon</button>
       </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="med-box ">
+              <h3>Lorem Ipsum</h3>
+              <p class="fade-text">10mg, 30 tablets</p>
+              <hr>
+              <p class="full-price">$61.60</p>
+              <p class="current-price">$21.70</p>
+              <p class="percent-off">65% off with EasyRx</p>
+              <button type="button" class="btn btn-outline-primary">Get Free Coupon</button>
+            </div>
 
-      <div class="med-box ">
-        <h3>Lorem Ipsum</h3>
-        <p class="fade-text">10mg, 30 tablets</p>
-        <hr>
-        <p class="full-price">$61.60</p>
-        <p class="current-price">$21.70</p>
-        <p class="percent-off">65% off with EasyRx</p>
-        <button type="button" class="btn btn-outline-primary">Get Free Coupon</button>
-      </div>
+          </div>
+          <div class="col-md-4">
+            <div class="med-box ">
+              <h3>Lorem Ipsum</h3>
+              <p class="fade-text">10mg, 30 tablets</p>
+              <hr>
+              <p class="full-price">$61.60</p>
+              <p class="current-price">$21.70</p>
+              <p class="percent-off">65% off with EasyRx</p>
+              <button type="button" class="btn btn-outline-primary">Get Free Coupon</button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="med-box ">
+              <h3>Lorem Ipsum</h3>
+              <p class="fade-text">10mg, 30 tablets</p>
+              <hr>
+              <p class="full-price">$61.60</p>
+              <p class="current-price">$21.70</p>
+              <p class="percent-off">65% off with EasyRx</p>
+              <button type="button" class="btn btn-outline-primary">Get Free Coupon</button>
+            </div>
+          </div>
+        </div>
+      </div><!--   end of carousel item -->
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="med-box ">
+              <h3>Lorem Ipsum</h3>
+              <p class="fade-text">10mg, 30 tablets</p>
+              <hr>
+              <p class="full-price">$61.60</p>
+              <p class="current-price">$21.70</p>
+              <p class="percent-off">65% off with EasyRx</p>
+              <button type="button" class="btn btn-outline-primary">Get Free Coupon</button>
+            </div>
 
-      <div class="med-box ">
-        <h3>Lorem Ipsum</h3>
-        <p class="fade-text">10mg, 30 tablets</p>
-        <hr>
-        <p class="full-price">$61.60</p>
-        <p class="current-price">$21.70</p>
-        <p class="percent-off">65% off with EasyRx</p>
-        <button type="button" class="btn btn-outline-primary">Get Free Coupon</button>
-      </div>
+          </div>
+          <div class="col-md-4">
+            <div class="med-box ">
+              <h3>Lorem Ipsum</h3>
+              <p class="fade-text">10mg, 30 tablets</p>
+              <hr>
+              <p class="full-price">$61.60</p>
+              <p class="current-price">$21.70</p>
+              <p class="percent-off">65% off with EasyRx</p>
+              <button type="button" class="btn btn-outline-primary">Get Free Coupon</button>
+            </div>
+          </div>
+          <div class="col-md-4">
 
-      <div class="med-box ">
-        <h3>Lorem Ipsum</h3>
-        <p class="fade-text">10mg, 30 tablets</p>
-        <hr>
-        <p class="full-price">$61.60</p>
-        <p class="current-price">$21.70</p>
-        <p class="percent-off">65% off with EasyRx</p>
-        <button type="button" class="btn btn-outline-primary">Get Free Coupon</button>
-      </div>
+          </div>
+        </div>
+      </div><!--   end of carousel item -->
+
     </div>
+
+
   </div>
+
+
+
+  </div>
+  </div>
+  <div class="control-box">
+    <div class="control-box-inner">
+    <div class="row">
+      <div class="col-md-4"><button class="btnleft" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">Left</button></div>
+      <div class="col-md-4 control-text"><span id="control-text"></span></div>
+      <div class="col-md-4"><button class="btnright" type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide="next">Right</button></div>
+    </div>
+    </div>
   </div>
   <div class="how-it-works">
     <h2>How EasyRx Works</h2>
@@ -336,6 +376,7 @@
 
   <p>2022 &copy Gregory M. Boone.  Powered by HTML, CSS, Javascript and Bootstrap.</p>
 </footer>
+
 	<script src="main.js"></script>
   </body>
 </html>
